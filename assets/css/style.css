@@ -1,0 +1,254 @@
+:root{
+  --font-family: sans-serif;
+  --blue: #0084FD;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+.color-body-white{
+  background-color: white;
+}
+
+.color-body-lille{
+  background-color: #9792E4;
+}
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.card{
+  width: 100%;
+  background-color: violet;
+  margin: 20px 0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* HEADER */
+.header-container{
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+/* debug */
+header .container .logo,
+header .container .menu{
+  height: 80px;
+  border: 1px solid black;
+  width: 100px;
+}
+
+header .container .logo{
+  background-color: white;
+}
+
+header .container .menu{
+  background-color: red;
+}
+
+/* /HEADER */
+
+/* MAIN  */
+
+/* APP-CONTAINER */
+.app-card{
+  height: 275px;
+}
+
+
+/* /APP-CONTAINER */
+
+/* STRATEGIC-CONTAINER */
+
+.strategic-container{
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.strategic{
+  height: 300px;
+  text-align: center;
+}
+
+.strategic-card{
+  height: 200px;
+  background-color: white;
+  margin: 20px 10px;
+}
+
+/* /STRATEGIC-CONTAINER */
+
+/* TESTIMONIAL-CONTAINER */
+
+.intro-testimonial{
+  text-align: center;
+}
+
+/* TESTIMONIAL-CONTAINER */
+
+/* BENEFITS-CONTAINER */
+
+.benefits-container .title-benefits h3{
+  text-align: center;
+}
+
+.benefits-card{
+  text-align: left;
+}
+
+/* BENEFITS-CONTAINER */
+
+/* ABOUT-CONTAINER */
+
+.card-about{
+  background-color: yellow;
+  text-align: left;
+}
+
+/* /ABOUT-CONTAINER */
+
+/* FREE-CONTAAINER */
+
+.free-container{
+  text-align: center;
+}
+
+/* /FREE-CONTAAINER */
+
+/* FOOTER */
+
+footer{
+  background-color: black;
+}
+
+.container-footer{
+  color: wheat;
+  text-align: center;
+}
+
+.footer-p{
+  margin-bottom: 50px;
+}
+
+/* /FOOTER */
+
+@media screen and (min-width:768px){
+  .container{
+    width: 95%;
+  }
+
+  .app-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    width: 31%;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .app-card{
+    width: 64%;
+  }
+
+  .strategic-container .strategic-card{
+    width: 95%;
+  }
+
+  .testimonials-container .testimonial-card{
+    width: 100%;
+  }
+
+  .container-card-benefits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-container{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (min-width:1200px){
+  .container{
+    width: 70%;
+  }
+
+  .app-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    width: 31%;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .app-card{
+    width: 64%;
+  }
+
+  .strategic-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .strategic{
+    width: 60%;
+  }
+
+  .strategic-card{
+    width: 40%;
+  }
+
+  .testimonials-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials-container .testimonial-card{
+    width: 100%;
+  }
+
+  .benefits-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-card-benefits{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: row;
+}
+}
