@@ -5,6 +5,7 @@
   --lille: #9792E4;
   --yellow: #FDC15F;
   --dark-gray: #303030;
+  --gray: #5A6E7F;
 }
 
 *{
@@ -37,9 +38,9 @@ img{
 
 .card{
   width: 100%;
-  background-color: violet;
+  background-color: white;
   margin: 20px 0;
-  border-radius: 15px;
+  border-radius: 40px;
   text-align: center;
 }
 
@@ -85,41 +86,97 @@ header{
   padding: 10px
 }
 
-header .container .logo{
-  background-color: white;
-}
-
-
 /* /HEADER */
 
 /* MAIN  */
 
 /* APP-CONTAINER */
-.app-card{
-  height: 275px;
+
+.app-container .card{
+  background-color: var(--light-blue);
+  padding: 40px 40px 0 40px;
+  color: var(--gray);
+}
+.app-container .card h3{
+  color: var(--blue);
+  margin-bottom: 40px;
+  font-size: 1.9rem;
+  margin-top: 20px;
 }
 
+.app-card div img{
+  width: 80%;
+}
 
+.app-card  button{
+  background-color: var(--blue);
+  color: white;
+  margin: 40px;
+  width: 70%;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+.fa-apple{
+  margin-right: 20px;
+}
+
+.card span{
+  font-size: 5rem;
+  color: var(--blue);
+}
+
+.card p{
+  padding-bottom: 40px;
+}
 /* /APP-CONTAINER */
 
 /* STRATEGIC-CONTAINER */
 
 .strategic-container{
-  background-color: brown;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .strategic{
-  height: 300px;
   text-align: center;
 }
 
+.strategic img{
+  padding: 20px;
+}
+
+.strategic h3{
+  font-size: 2rem;
+  color: white;
+  margin: 40px auto;
+}
+
+.strategic p{
+  color: white;
+  margin-bottom: 20px;
+}
+
 .strategic-card{
-  height: 200px;
   background-color: white;
   margin: 20px 10px;
+}
+
+.strategic-card img{
+  width: 80%;
+}
+
+.strategic-card h5{
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.strategic-card button{
+  background-color: var(--lille);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  height: 40px;
 }
 
 /* /STRATEGIC-CONTAINER */
@@ -197,6 +254,20 @@ footer{
 
   .app-card{
     width: 64%;
+    text-align: left;
+  }
+
+  .app-card button{
+    margin-left: 0;
+  }
+  
+  .strategic h3{
+    font-size: 3.5rem;
+    text-align: left;
+  }
+
+  .strategic p{
+    text-align: left;
   }
 
   .strategic-container .strategic-card{
@@ -252,19 +323,34 @@ footer{
 
   .app-card{
     width: 64%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .app-card .app-img img{
+    width: 120%;
   }
 
   .strategic-container{
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
   }
 
   .strategic{
-    width: 60%;
+    width: 100%;
   }
 
   .strategic-card{
-    width: 40%;
+    width: 80%;
+  }
+
+  .strategic-card img{
+    width: 50%
+  }
+
+  .strategic-card p{
+    text-align: center;
   }
 
   .testimonials-container{
